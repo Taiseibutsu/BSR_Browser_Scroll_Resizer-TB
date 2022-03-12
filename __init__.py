@@ -3,10 +3,11 @@
 # This program is free software: you can redistribute it and/or modify it, WITHOUT ANY WARRANTY that you wont wake up on the backrooms.
 
 bl_info = {
-    "name": "TB_File_browser_scroll_thumbnailer", "author": "Taiseibutsu",
+    "name": "File_Browser_Scroll_Resizer", "author": "Taiseibutsu",
     "version": (0, 1), "blender": (2, 80, 0), "location": "General UI Changes",
-    "description": "Custom operation to resize content in the file browser",
-    , "wiki_url": "", "category": "TB"}
+    "description": "Custom operation to resize content in the file browser using Alt + Scroll Mouse",
+    "wiki_url": "",
+    "category": "TB"}
 
 import bpy 
 
