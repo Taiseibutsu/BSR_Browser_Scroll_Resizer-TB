@@ -69,6 +69,16 @@ def register():
         kmi = km.keymap_items.new("tbcontext.filesizedecrease", 'WHEELOUTMOUSE', 'PRESS', alt=True)
         kmi.active = True
         kmi = km.keymap_items.new("tbcontext.filesizeincrease", 'WHEELINMOUSE', 'PRESS', alt=True)
-        kmi.active = True        
+        kmi.active = True
+def unregister():
+    for cls in classes:
+        bpy.utils.unregister_class(cls) 
+    wm = bpy.context.window_manager
+    kc = wm.keyconfigs.addon
+    km = kc.keymaps.new(name='File Browser', space_type='FILE_BROWSER')
+    kmi = km.keymap_items.new("tbcontext.filesizedecrease", 'WHEELOUTMOUSE', 'PRESS', alt=True)
+    kmi.active = False
+    kmi = km.keymap_items.new("tbcontext.filesizeincrease", 'WHEELINMOUSE', 'PRESS', alt=True)
+    kmi.active = False                   
 if __name__ == "__main__":
     register()
