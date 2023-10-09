@@ -4,7 +4,7 @@
 
 bl_info = {
     "name": "File_Browser_Scroll_Resizer", "author": "Taiseibutsu",
-    "version": (0, 1), "blender": (2, 80, 0), "location": "General UI Changes",
+    "version": (0, 2), "blender": (4, 1, 0), "location": "General UI Changes",
     "description": "Custom operation to resize content in the file browser using Alt + Scroll Mouse",
     "wiki_url": "",
     "category": "TB"}
